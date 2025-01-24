@@ -28,3 +28,5 @@ Microsoft .NET Framework			          x.x.xxxxx.xxxxx
 Sistema Operacional						          xx.x.xxxxx
 </pre>
 Em Arquivo -> Conectar o Pesquisador de Objetos, conectamos ao servidor que foi instalado. Em Logon -> Tipo de Servidor, selecionei "Mecanismo de Banco de Dados". O Nome do Servidor, fiz uma busca automáticam qe me leva ao nome da instância SQLEXPRESS. Utilizei a Autenticação do Windows, e o nome do usuário é o nome dos administradores SQL. Como não cliquei em Criptografia, deixe como opcional.
+
+O Pesquisador de Objetos deverá apresentar, em uma janela, a instância conectada e suas sub-opções. A partir de então, consigo criar um projeto.
