@@ -16,4 +16,14 @@ Utilizei o SQL Server Express Edition 2022, realizando o download pelo endereço
   PASTA DE RECURSOS DE INSTALAÇÃO: C:\....
 </pre>
 
-
+A seguir, instalei o SQL Server Management Studio (SSMS) 20.2, por meio do endereço https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16 . Algumas informações podemos obter sobre o programa:
+<pre> 
+SQL Server Management Studio						20.2.30.0
+SMO (SQL Server Management Objects)						xx.xxx.xx....
+Microsoft T-SQL Parser						xx.xx....
+Ferramentas de Cliente do Microsoft Analysis Services						xx.x.x.x
+Microsoft Data SqlClient (MDS)						x.x.x
+Microsoft SQL Server Data-Tier Application Framework (DacFX)						xxx.x.x.....
+Microsoft .NET Framework			x.x.xxxxx.xxxxx
+Sistema Operacional						xx.x.xxxxx
+</pre>pre>
