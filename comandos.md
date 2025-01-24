@@ -29,6 +29,7 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 <li>ROLLBACK</li>
 <li>SET Transaction</li>
 <li>SET Constrain</li>
+</ul>
 
 <h4><li>DQL: Data Query Language</h4>
 <ul><li>SELECT</li>
