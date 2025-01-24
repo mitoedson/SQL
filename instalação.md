@@ -26,4 +26,4 @@ Microsoft Data SqlClient (MDS)						x.x.x
 Microsoft SQL Server Data-Tier Application Framework (DacFX)						xxx.x.x.....
 Microsoft .NET Framework			x.x.xxxxx.xxxxx
 Sistema Operacional						xx.x.xxxxx
-</pre>pre>
+</pre>
