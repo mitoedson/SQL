@@ -7,3 +7,6 @@ https://github.com/mitoedson/SQL/blob/main/instala%C3%A7%C3%A3o.md
 
 2. Configurando um projeto:<br>
 https://github.com/mitoedson/SQL/blob/main/projeto.md
+
+3. Comandos do SQL
+https://github.com/mitoedson/SQL/blob/main/comandos.md
