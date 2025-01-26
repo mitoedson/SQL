@@ -61,9 +61,11 @@ Sintaxe:<br>
 SET TRANSACTION característica
 </p>
 <p><br>
-<li>SET Constrain</li>
+<li>SET CONSTRAINS</li>
+Define o comportamento da verificação de restrições (constrains) dentro da transação atual. 
 <p><br>
 Sintaxe:<br>
+SET CONSTRAINS <ALL | nome > <DEFERRED | IMMEDIATE>
 </p>
 </ul>
 <p><br>
@@ -81,4 +83,5 @@ SELECT expressão FROM tabela WHERE condição
 <p><br>
 Fontes:<br>
 https://www.w3schools.com/<br>
-https://www.mygreatlearning.com/blog/sql-commands/
+https://www.mygreatlearning.com/blog/sql-commands/<br>
+https://www.postgresql.org/docs/current/sql-set-constraints.html/
