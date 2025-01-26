@@ -12,7 +12,7 @@ Sintaxe:<br>
 <pre>CREATE objeto nome_do_objeto (tipo_de_dados_coluna1, tipo_de_dados_coluna2, ...)</pre>
 </p>
 <p><br>
-<ul><li>ALTER</li>
+<li>ALTER</li>
 Utilizado para modificar um objeto de banco de dados existente, como adicionar, excluir ou modificar colunas em uma tabela existente.
 <p><br>
 Sintaxe para adicionar uma coluna em uma tabela:<br>
@@ -23,7 +23,7 @@ Sintaxe para adicionar uma coluna em uma tabela:<br>
 </p>
 
 <p><br>
-<ul><li>DROP</li>
+<li>DROP</li>
 Utilizado para excluir um objeto de banco de dados existente, como uma tabela, uma exibição ou outros objetos.
 <p><br>
 Sintaxe:<br>
@@ -31,7 +31,7 @@ Sintaxe:<br>
 </p>
   
 <p><br>
-<ul><li>TRUNCATE</li>
+<li>TRUNCATE</li>
 Utilizado para excluir todos os dados de uma tabela, mas a estrutura da tabela permanece. É uma maneira rápida de limpar dados grandes de uma tabela.
 <p><br>
 Sintaxe:<br>
@@ -39,14 +39,14 @@ Sintaxe:<br>
 </p>
   
 <p><br>
-<ul><li>COMMENT</li>
+<li>COMMENT</li>
 Usado para adicionar comentários ao dicionário de dados.
 <p><br>
 Sintaxe:<br>
 <pre>COMMENT ON TABLE nome_da_tabela IS 'Este é um comentário.';</pre>
 </p>
 <p><br>
-<ul><li>RENAME</li>
+<li>RENAME</li>
 Usado para renomear um objeto de banco de dados existente.
 <p><br>
 Sintaxe:<br>
