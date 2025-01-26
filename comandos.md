@@ -24,23 +24,37 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 </ul>
 
 <h3>TCL: Transaction Control Language</h3>
-São comandos que gerenciam que ocorre alteração no banco de dados. 
+São comandos que gerenciam as transações que ocorrem no banco de dados. 
+<p>
+<ul><li>BEGIN TRANSACTION (ou apenas BEGIN)</li>
+Comando que inicia uma nova transação em um banco de dados. Nem sempre ele é utilizada pois seu uso fica implícito. 
 <p><br>
-<ul><li>COMMIT</li>
-Salva as alterações realizadas no banco de dados. Ela é sempre posicionada após a realização de alterações.
+Sintaxe:<br>
+BEGIN TRANSACTION
+</p>
+<p><br>
+<li>COMMIT</li>
+Salva as transações permanentemente no banco de dados. Ela é sempre posicionada após a realização de alterações.
 <p><br>
 Sintaxe:<br>
 COMMIT
 </p>
 <p><br>
 <li>ROLLBACK</li>
-Reverte as alterações realizadas no banco de dados. Lembrando que a reversão só pode ser realizada se ela não foi salva anteriormente.
+Reverte as transações realizadas no banco de dados. Lembrando que a reversão só pode ser realizada se ela não foi salva anteriormente.
 <p><br>
 Sintaxe:<br>
 ROLLBACK
 </p>
-
+<p><br>
 <li>SAVEPOINT</li>
+Cria posições dentro das transações de modo que qualquer alteração realizada na posição indicada possa ser revertida. Seu uso torna o controle mais complexo, isolando trechos selecionados dentro da transação.
+<p><br>
+Sintaxe:<br>
+SAVEPOINT nome_do_savepoint
+</p>
+
+
 <li>SET Transaction</li>
 <li>SET Constrain</li>
 </ul>
