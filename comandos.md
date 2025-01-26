@@ -66,7 +66,7 @@ SET TRANSACTION característica
 Sintaxe:<br>
 </p>
 </ul>
-
+<p><br>
 <h3>DQL: Data Query Language</h3>
 São comandos de obtenção e organização de dados de um banco de dados. 
 <p><br>
