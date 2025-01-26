@@ -80,5 +80,5 @@ SELECT expressão FROM tabela WHERE condição
 
 <p><br>
 Fontes:<br>
-https://www.w3schools.com/
+https://www.w3schools.com/<br>
 https://www.mygreatlearning.com/blog/sql-commands/
