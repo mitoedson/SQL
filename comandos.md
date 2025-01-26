@@ -46,35 +46,35 @@ São comandos que gerenciam as transações que ocorrem no banco de dados.
 Comando que inicia uma nova transação em um banco de dados. Nem sempre ele é utilizada pois seu uso fica implícito. 
 <p><br>
 Sintaxe:<br>
-BEGIN TRANSACTION
+<pre>BEGIN TRANSACTION</pre>
 </p>
 <p><br>
 <li>COMMIT</li>
 Salva as transações permanentemente no banco de dados. Ela é sempre posicionada após a realização de alterações.
 <p><br>
 Sintaxe:<br>
-COMMIT
+<pre>COMMIT</pre>
 </p>
 <p><br>
 <li>ROLLBACK</li>
 Reverte as transações realizadas no banco de dados. Lembrando que a reversão só pode ser realizada se ela não foi salva anteriormente.
 <p><br>
 Sintaxe:<br>
-ROLLBACK
+<pre>ROLLBACK</pre>
 </p>
 <p><br>
 <li>SAVEPOINT</li>
 Cria posições dentro das transações de modo que qualquer alteração realizada na posição indicada possa ser revertida. Seu uso torna o controle mais complexo, isolando trechos selecionados dentro da transação.
 <p><br>
 Sintaxe:<br>
-SAVEPOINT nome_do_savepoint
+<pre>SAVEPOINT nome_do_savepoint</pre>
 </p>
 <p><br>
 <li>SET TRANSACTION</li>
 Comando especifica as características de uma transação.
 <p><br>
 Sintaxe:<br>
-SET TRANSACTION característica
+<pre>SET TRANSACTION característica</pre>
 </p>
 <p><br>
 <li>SET CONSTRAINS</li>
@@ -92,7 +92,7 @@ São comandos de obtenção e organização de dados de um banco de dados.
   Utilizamos para extrair dados para execução. Como resultado, uma tabela temporária será criada, com a finalidade exibir dados através do SELECT.
 <p><br>
 Sintaxe:<br>
-SELECT expressão FROM tabela WHERE condição
+<pre>SELECT expressão FROM tabela WHERE condição</pre>
 </p>
 </ul>
 
