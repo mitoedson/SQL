@@ -77,3 +77,7 @@ Sintaxe:<br>
 SELECT expressão FROM tabela WHERE condição
 </p>
 </ul>
+
+<p><br>
+Fontes:<br>
+https://www.w3schools.com/
