@@ -65,7 +65,7 @@ SET TRANSACTION característica
 Define o comportamento da verificação de restrições (constrains) dentro da transação atual. 
 <p><br>
 Sintaxe:<br>
-<pre>SET CONSTRAINS <ALL | nome > <DEFERRED | IMMEDIATE></pre>
+<pre>SET CONSTRAINS < nome / ALL> <DEFERRED / IMMEDIATE></pre>
 </p>
 </ul>
 <p><br>
