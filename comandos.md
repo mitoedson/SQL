@@ -98,6 +98,11 @@ Sintaxe:<br>
 Utilizando o símbolo *, dizemos que todas as colunas de uma tabela serão selecionadas.<br>
 <pre>SELECT * FROM nome_da_tabela WHERE condição</pre>
 </p>
+<p>
+JOIN permite combinar linhas de mais de uma tabela, tomando como base uma coluna que relaciona entre elas. As opções de JOIN são: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN.<br>
+<pre>SELECT coluna_1,coluna_2,...,coluna_n FROM nome_da_tabela_1 [tipo_de_JOIN] nome_da_tabela_2 WHERE nome_da_tabela_1.coluna_n = nome_da_tabela_2.coluna_n</pre>
+</p>
+
 </ul>
 
 <p><br>
