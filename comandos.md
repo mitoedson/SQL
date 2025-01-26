@@ -2,12 +2,57 @@
 
 Utilizamos os comandos para interagir com o banco de dados. Podemos classificar os comandos por meio das sintaxes:
 
-<h4><li>DDL: Data Definition Language</h4>
+<h3>DDL: Data Definition Language</h3>
+Comandos responsáveis por definir e modificar a estrutura de um banco de dados. Podemos alterar, apagar e modificar objetos de um banco de dados, como tabelas, índices e esquemas.
+<p>
 <ul><li>CREATE</li>
-<li>DROP</li>
-<li>ALTER</li>
-<li>TRUNCATE</li>
-<li>RENAME</li>
+Criação de um novo objeto em um banco de dados. Os objetos podem ser tabelas (TABLE)
+<p><br>
+Sintaxe:<br>
+<pre>CREATE objeto nome_do_objeto (tipo_de_dados_coluna1, tipo_de_dados_coluna2, ...)</pre>
+</p>
+<p><br>
+<ul><li>ALTER</li>
+Utilizado para modificar um objeto de banco de dados existente, como adicionar, excluir ou modificar colunas em uma tabela existente.
+<p><br>
+Sintaxe para adicionar uma coluna em uma tabela:<br>
+<pre>ALTER TABLE nome_da_tabela ADD nome_da_coluna tipo_de_dados</pre>
+</p>
+<p>Sintaxe para modificar uma coluna em uma tabela:<br>
+<pre>ALTER TABLE nome_da_tabela MODIFY COLUMN nome_da_coluna tipo_de_dados</pre>
+</p>
+
+<p><br>
+<ul><li>DROP</li>
+Utilizado para excluir um objeto de banco de dados existente, como uma tabela, uma exibição ou outros objetos.
+<p><br>
+Sintaxe:<br>
+<pre>DROP TABLE nome_da_tabela</pre>
+</p>
+  
+<p><br>
+<ul><li>TRUNCATE</li>
+Utilizado para excluir todos os dados de uma tabela, mas a estrutura da tabela permanece. É uma maneira rápida de limpar dados grandes de uma tabela.
+<p><br>
+Sintaxe:<br>
+<pre>TRUNCATE TABLE nome_da_tabela;</pre>
+</p>
+  
+<p><br>
+<ul><li>COMMENT</li>
+Usado para adicionar comentários ao dicionário de dados.
+<p><br>
+Sintaxe:<br>
+<pre>COMMENT ON TABLE nome_da_tabela IS 'Este é um comentário.';</pre>
+</p>
+<p><br>
+<ul><li>RENAME</li>
+Usado para renomear um objeto de banco de dados existente.
+<p><br>
+Sintaxe:<br>
+<pre>RENAME TABLE nome_da_tabela_antigo TO nome_da_tabela_novo;
+</pre>
+</p>
 </ul>
 
 <p><br></p>
