@@ -20,8 +20,15 @@ Insere novas linhas (registros) em um banco de dados.
 Sintaxe:<br>
 <pre>INSERT INTO nome_da_tabela (coluna_1, coluna_2,..., coluna_n) VALUES (valor_1, valor_2,...,valor_n, ...)</pre>
 </p>
-
+<p><br>
 <li>UPDATE</li>
+Comando realiza modificações nos registros de um banco de dados, de acordo com as condições especificadas.
+<p><br>
+Sintaxe:<br>
+<pre>UPDATE nome_da_tabela SET coluna_1 = valor_1, coluna_2 = valor_2, ..., coluna_n = valor_n WHERE condição</pre>
+</p>
+Note que sem declarar WHERE, todos os registros serão atualizados.
+
 <li>DELETE</li>
 <li>CALL</li>
 <li>LOCK</li>
@@ -29,7 +36,7 @@ Sintaxe:<br>
 
 <p><br></p>
 <h3>DCL: Data Control Language</h3>
-Comandos que, em um ambiente multiusuários, concede ou revoga direitos de acesso de dados, garantindo segurança em um banco de dados.
+Comandos que, em um ambiente multiusuários, concede ou revoga direitos de acesso de dados, garantindo segurança e controle em um banco de dados.
 <p>
 <ul><li>GRANT</li>
 Concede aos usuários privilégios de acesso ao banco de dados, como selecionar, inserir, atualizar, excluir etc. 
