@@ -8,5 +8,5 @@ https://github.com/mitoedson/SQL/blob/main/instala%C3%A7%C3%A3o.md
 2. Comandos do SQL<br>
 https://github.com/mitoedson/SQL/blob/main/comandos.md
 
-3. Configurando um projeto:<br>
-https://github.com/mitoedson/SQL/blob/main/projeto.md
+3. SQL Curingas (Wildcards):<br>
+https://github.com/mitoedson/SQL/blob/main/wildcards.md
