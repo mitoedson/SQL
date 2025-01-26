@@ -26,12 +26,23 @@ Comando realiza modificações nos registros de um banco de dados, de acordo com
 <p><br>
 Sintaxe:<br>
 <pre>UPDATE nome_da_tabela SET coluna_1 = valor_1, coluna_2 = valor_2, ..., coluna_n = valor_n WHERE condição</pre>
-</p>
+<p>
 Note que sem declarar WHERE, todos os registros serão atualizados.
-
+</p></p>
+<p><br>
 <li>DELETE</li>
-<li>CALL</li>
-<li>LOCK</li>
+Comando apaga linhas de um banco de dados, especificando quais deverão ser deletadas.
+<p><br>
+Sintaxe:<br>
+<pre>DELETE FROM nome_da_tabela WHERE condição</pre>
+</p>
+<p><br>
+<li>SELECT</li>
+Comando comumente categorizado em outros sintaxes, o comando SELECT consulta e seleciona os dados de acordo com as condições solicitadas. 
+<p><br>
+Sintaxe:<br>
+<pre>SELECT coluna_1, coluna_2, ..., coluna_n FROM nome_da_tabela WHERE condição;</pre>
+</p>
 </ul>
 
 <p><br></p>
