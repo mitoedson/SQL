@@ -36,3 +36,7 @@ Há dois caracteres curingas importantes:
   </p>
 </ul>
 Podemos combinar os dois caracteres curinga, dependendo do tipo de informação desejamos.  Por outro lado, se não utilizarmos LIKE, os caracteres curingas tornarão apenas um caracter literal.
+<p>
+Fontes:<br> 
+https://www.w3schools.com/sql/sql_wildcards.asp
+</p>
