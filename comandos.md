@@ -53,10 +53,18 @@ Cria posições dentro das transações de modo que qualquer alteração realiza
 Sintaxe:<br>
 SAVEPOINT nome_do_savepoint
 </p>
-
-
-<li>SET Transaction</li>
+<p><br>
+<li>SET TRANSACTION</li>
+Comando especifica as características de uma transação.
+<p><br>
+Sintaxe:<br>
+SET TRANSACTION característica
+</p>
+<p><br>
 <li>SET Constrain</li>
+<p><br>
+Sintaxe:<br>
+</p>
 </ul>
 
 <h3>DQL: Data Query Language</h3>
