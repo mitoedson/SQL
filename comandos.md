@@ -10,8 +10,17 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 <li>RENAME</li>
 </ul>
 
-<h4><li>DML: Data Manipulation Language</h4>
+<p><br></p>
+<h3>DML: Data Manipulation Language</h3>
+Comandos responsáveis pela adição, alteração e exclusão de dados em um banco de dados.
+<p>
 <ul><li>INSERT</li>
+Insere novas linhas (registros) em um banco de dados.
+<p><br>
+Sintaxe:<br>
+<pre>INSERT INTO nome_da_tabela (coluna_1, coluna_2,..., coluna_n) VALUES (valor_1, valor_2,...,valor_n, ...)</pre>
+</p>
+
 <li>UPDATE</li>
 <li>DELETE</li>
 <li>CALL</li>
