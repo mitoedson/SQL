@@ -23,15 +23,17 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 Comandos que, em um ambiente multiusuários, concede ou revoga direitos de acesso de dados, garantindo segurança em um banco de dados.
 <p>
 <ul><li>GRANT</li>
+Concede aos usuários privilégios de acesso ao banco de dados, como selecionar, inserir, atualizar, excluir etc. 
 <p><br>
 Sintaxe:<br>
-<pre></pre>
+<pre>GRANT privilégio ON nome_do_objeto TO nome_do_usuário</pre>
 </p>
 <p><br>
 <li>REVOKE</li>
+Restringe aos usuários privilégios de acesso ao banco de dados, como selecionar, inserir, atualizar, excluir etc. 
 <p><br>
 Sintaxe:<br>
-<pre></pre>
+<pre>GRANT privilégio ON nome_do_objeto TO nome_do_usuário</pre>
 </p>
 </ul>
 
