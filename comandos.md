@@ -24,7 +24,15 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 </ul>
 
 <h4><li>TCL: Transaction Control Language</h4>
+São comandos que gerenciam que ocorre alteração no banco de dados. 
+<p><br>
 <ul><li>COMMIT</li>
+Salva as alterações realizadas no banco de dados. Ela é sempre posicionada após a realização de alterações.
+<p><br>
+Sintaxe:<br>
+COMMIT
+</p>
+
 <li>SAVEPOINT</li>
 <li>ROLLBACK</li>
 <li>SET Transaction</li>
@@ -32,7 +40,7 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 </ul>
 
 <h4><li>DQL: Data Query Language</h4>
-Basicamente são comandos de obtenção e organização de dados de um banco de dados. 
+São comandos de obtenção e organização de dados de um banco de dados. 
 <p><br>
 <ul><li>SELECT</li>
   Utilizamos para extrair dados para execução. Como resultado, uma tabela temporária será criada, com a finalidade exibir dados através do SELECT.
