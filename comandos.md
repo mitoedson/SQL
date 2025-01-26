@@ -102,7 +102,14 @@ Utilizando o símbolo *, dizemos que todas as colunas de uma tabela serão selec
 JOIN permite combinar linhas de mais de uma tabela, tomando como base uma coluna que relaciona entre elas. As opções de JOIN são: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN.<br>
 <pre>SELECT coluna_1,coluna_2,...,coluna_n FROM nome_da_tabela_1 [tipo_de_JOIN] nome_da_tabela_2 WHERE nome_da_tabela_1.coluna_n = nome_da_tabela_2.coluna_n</pre>
 </p>
-
+<p>
+GROUP BY utilizamos com funções de agregação, como COUNT, MAX, MIN, SUM, AVG. Tem como objetivo agrupar um conjunto de resultados por uma ou mais colunas<br>
+<pre>SELECT coluna1, função_agregada(coluna2) FROM nome_tabela GROUP BY coluna1</pre>
+</p>
+<p>
+ORDER BY: usada para classificar o conjunto de resultados em ordem crescente ou decrescente.<br>
+<pre>SELECT coluna1, coluna2 FROM nome_tabela ORDER BY coluna1 [ASC|DESC], coluna2 [ASC|DESC]</pre>
+</p>
 </ul>
 
 <p><br>
