@@ -18,10 +18,24 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 <li>LOCK</li>
 </ul>
 
-<h4><li>DCL: Data Control Language</h4>
+<p><br></p>
+<h3>DCL: Data Control Language</h3>
+Comandos que, em um ambiente multiusuários, concede ou revoga direitos de acesso de dados, garantindo segurança em um banco de dados.
+<p>
 <ul><li>GRANT</li>
+<p><br>
+Sintaxe:<br>
+<pre></pre>
+</p>
+<p><br>
 <li>REVOKE</li>
+<p><br>
+Sintaxe:<br>
+<pre></pre>
+</p>
 </ul>
+
+
 <p><br>
 <h3>TCL: Transaction Control Language</h3>
 São comandos que gerenciam as transações que ocorrem no banco de dados. 
