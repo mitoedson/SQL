@@ -38,7 +38,7 @@ Sintaxe:<br>
 </p>
 <p><br>
 <li>SELECT</li>
-Comando comumente categorizado em outros sintaxes, o comando SELECT consulta e seleciona os dados de acordo com as condições solicitadas. 
+Comando comumente categorizado em outras sintaxes, o comando SELECT consulta e seleciona os dados de acordo com as condições solicitadas. 
 <p><br>
 Sintaxe:<br>
 <pre>SELECT coluna_1, coluna_2, ..., coluna_n FROM nome_da_tabela WHERE condição;</pre>
