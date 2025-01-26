@@ -86,13 +86,17 @@ Sintaxe:<br>
 </ul>
 <p><br>
 <h3>DQL: Data Query Language</h3>
-São comandos de obtenção e organização de dados de um banco de dados. 
+São comandos de obtenção e organização de dados de um banco de dados, permitindo que se faça consultas e recuperação de dados. O principal comando do DQL é o SELECT 
 <p><br>
 <ul><li>SELECT</li>
-  Utilizamos para extrair dados para execução. Como resultado, uma tabela temporária será criada, com a finalidade exibir dados através do SELECT.
+Utilizamos para extrair dados para execução a partir de condições específicas. Como resultado, uma tabela temporária será criada, com a finalidade exibir dados através do SELECT.
 <p><br>
 Sintaxe:<br>
-<pre>SELECT expressão FROM tabela WHERE condição</pre>
+<pre>SELECT coluna_1,coluna_2,...,coluna_n FROM nome_da_tabela WHERE condição</pre>
+</p>
+<p>
+Utilizando o símbolo *, dizemos que todas as colunas de uma tabela serão selecionadas.<br>
+<pre>SELECT * FROM nome_da_tabela WHERE condição</pre>
 </p>
 </ul>
 
