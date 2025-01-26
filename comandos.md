@@ -32,14 +32,20 @@ Salva as alterações realizadas no banco de dados. Ela é sempre posicionada ap
 Sintaxe:<br>
 COMMIT
 </p>
+<p><br>
+<li>ROLLBACK</li>
+Reverte as alterações realizadas no banco de dados. Lembrando que a reversão só pode ser realizada se ela não foi salva anteriormente.
+<p><br>
+Sintaxe:<br>
+ROLLBACK
+</p>
 
 <li>SAVEPOINT</li>
-<li>ROLLBACK</li>
 <li>SET Transaction</li>
 <li>SET Constrain</li>
 </ul>
 
-<h3><li>DQL: Data Query Language</h3>
+<h3>DQL: Data Query Language</h3>
 São comandos de obtenção e organização de dados de um banco de dados. 
 <p><br>
 <ul><li>SELECT</li>
