@@ -37,7 +37,8 @@ Basicamente são comandos de obtenção e organização de dados de um banco de 
 <ul><li>SELECT</li>
   Utilizamos para extrair dados para execução. Como resultado, uma tabela temporária será criada, com a finalidade exibir dados através do SELECT.
 <p>
-Sintaxe: SELECT expressão FROM tabela WHERE condição
+Sintaxe:<br>
+SELECT expressão FROM tabela WHERE condição
 </p>
 </ul>
 
