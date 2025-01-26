@@ -2,7 +2,6 @@
 
 O curinga SQL é extremamente útil quando queremos filtrar dentro de um banco de dados, algum dado específico. Utilizamos os curingas com o operador LIKE na cláusula WHERE de uma consulta para filtrar dados.
 <p>
-Há dois caracteres curingas importantes:
 <ul>
   <li>O caracter underline _</li>
   <p>Representa um simples caracter qualquer. Podemos fazer uma busca descobrindo se dentro de uma tabela, existem dados que contenham uma sequência de caracteres desejados.</p> 
