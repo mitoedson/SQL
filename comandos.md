@@ -22,7 +22,7 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 <ul><li>GRANT</li>
 <li>REVOKE</li>
 </ul>
-
+<p><br>
 <h3>TCL: Transaction Control Language</h3>
 São comandos que gerenciam as transações que ocorrem no banco de dados. 
 <p>
@@ -77,6 +77,3 @@ Sintaxe:<br>
 SELECT expressão FROM tabela WHERE condição
 </p>
 </ul>
-
-
-
