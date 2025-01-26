@@ -23,7 +23,7 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 <li>REVOKE</li>
 </ul>
 
-<h4><li>TCL: Transaction Control Language</h4>
+<h3>TCL: Transaction Control Language</h3>
 São comandos que gerenciam que ocorre alteração no banco de dados. 
 <p><br>
 <ul><li>COMMIT</li>
@@ -39,7 +39,7 @@ COMMIT
 <li>SET Constrain</li>
 </ul>
 
-<h4><li>DQL: Data Query Language</h4>
+<h3><li>DQL: Data Query Language</h3>
 São comandos de obtenção e organização de dados de um banco de dados. 
 <p><br>
 <ul><li>SELECT</li>
