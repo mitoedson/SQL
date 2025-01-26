@@ -32,7 +32,9 @@ Utilizamos os comandos para interagir com o banco de dados. Podemos classificar 
 </ul>
 
 <h4><li>DQL: Data Query Language</h4>
+Basicamente são comandos de obtenção e organização de dados de um banco de dados.  
 <ul><li>SELECT</li>
+  Utilizamos para extrair dados para execução. Como resultado, uma tabela temporária será criada, com a finalidade exibir dados através do SELECT.
 </ul>
 
 
