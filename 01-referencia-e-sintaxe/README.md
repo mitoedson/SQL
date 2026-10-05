@@ -57,4 +57,121 @@ Embora a instrução comece com o comando `SELECT`, o banco de dados avalia e pr
 5. **`SELECT`**: Seleciona quais colunas ou expressões finais serão exibidas no resultado.
 6. **`ORDER BY`**: Ordena as linhas do resultado final.
 
+## 02 - Sintaxe
+A sintaxe do **SQL** (Linguagem de Consulta Estruturada) define o conjunto de regras, palavras-chave e estruturas necessárias para construir comandos declarativos direcionados a um sistema gerenciador de banco de dados relacional. Por ser uma linguagem não-procedural, a sua sintaxe especifica **quais** dados ou modificações são desejados, deixando para o otimizador do banco a tarefa de determinar a melhor estratégia física de execução.
+
+---
+
+### 1. Organização Sintática por Sublinguagens
+
+Na teoria e prática dos bancos de dados, os comandos SQL dividem-se em sublinguagens especializadas:
+
+* **DDL (*Data Definition Language*)**: Define, altera e remove objetos e esquemas do banco.
+  * **Sintaxe básica**:
+    ```sql
+    CREATE TABLE cliente (
+        cliente_id INT PRIMARY KEY,
+        nome VARCHAR(50) NOT NULL,
+        email VARCHAR(100)
+    );
+    ALTER TABLE cliente ADD COLUMN telefone VARCHAR(20);
+    DROP TABLE cliente;
+    ```
+  * **Comandos chave**: `CREATE`, `ALTER`, `DROP`. Os metadados gerados por essa sintaxe ficam armazenados no dicionário de dados.
+
+* **DML (*Data Manipulation Language*)**: Manipula os registros armazenados nas tabelas.
+  * **Sintaxe básica**:
+    ```sql
+    INSERT INTO cliente (cliente_id, nome, email) VALUES (1, 'Ana Silva', 'ana@email.com');
+    UPDATE cliente SET email = 'ana.silva@email.com' WHERE cliente_id = 1;
+    DELETE FROM cliente WHERE cliente_id = 1;
+    ```
+  * **Comandos chave**: `INSERT`, `UPDATE`, `DELETE`.
+
+* **DQL (*Data Query Language*)**: Responsável pela extração e filtragem dos dados.
+  * **Comando central**: `SELECT`.
+
+* **DCL (*Data Control Language*) e Transações**: Gerencia segurança, permissões e atomicidade transacional.
+  * **Comandos chave**: `GRANT`, `REVOKE`, `COMMIT`, `ROLLBACK`.
+
+---
+
+### 2. Anatomia e Cláusulas da Consulta (`SELECT`)
+
+Uma instrução de consulta em SQL é formada por cláusulas sintáticas padronizadas:
+
+```sql
+SELECT DISTINCT c.nome, COUNT(p.pedido_id) AS total_pedidos
+FROM cliente c
+INNER JOIN pedido p ON c.cliente_id = p.cliente_id
+WHERE p.data_pedido >= '2023-01-01'
+GROUP BY c.nome
+HAVING COUNT(p.pedido_id) > 5
+ORDER BY total_pedidos DESC
+LIMIT 10;
+```
+
+* **`SELECT`**: Determina as colunas, expressões, literais ou funções agregadas a serem projetadas no conjunto de resultados. Pode usar o modificador `DISTINCT` para eliminar duplicatas.
+* **`FROM`**: Especifica a tabela de origem e as regras de associação/junção (`JOIN`, `INNER JOIN`, `LEFT JOIN`) entre tabelas.
+* **`WHERE`**: Aplica predicados e filtros condicionais linha a linha.
+* **`GROUP BY`**: Agrupa registros com valores idênticos nas colunas especificadas para realizar cálculos de agregação (como `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`).
+* **`HAVING`**: Aplica condições de filtro sobre os grupos gerados pelas agregações.
+* **`ORDER BY`**: Define a ordenação do resultado final (crescente com `ASC` ou decrescente com `DESC`).
+* **`LIMIT` / `OFFSET` / `TOP`**: Restringe o número de registros retornados na consulta.
+
+---
+
+### 3. Ordem Lógica de Avaliação Sintática
+
+Embora a consulta seja escrita iniciando pela palavra-chave `SELECT`, o motor do banco de dados avalia e executa a sintaxe em uma **ordem lógica interna** específica:
+
+1. **`FROM` e `JOIN`**: Carrega e junta as tabelas de origem.
+2. **`WHERE`**: Filtra as linhas individuais brutas antes de qualquer agrupamento.
+3. **`GROUP BY`**: Agrupa os registros restantes e calcula as agregações.
+4. **`HAVING`**: Filtra os grupos consolidados com base no resultado das agregações.
+5. **Funções de Janela (*Window Functions*)**: Calcula funções analíticas (como `OVER`, `RANK`, `ROW_NUMBER`).
+6. **`SELECT`**: Executa a projeção final das colunas e expressões declaradas.
+7. **`DISTINCT`**: Remove linhas duplicadas do resultado projetado.
+8. **Operadores de Conjunto (`UNION`, `EXCEPT`, `INTERSECT`)**: Combina múltiplos conjuntos de dados.
+9. **`ORDER BY`**: Aplica a ordenação final de exibição.
+10. **`LIMIT` / `OFFSET`**: Trunca a quantidade de linhas exibidas na saída.
+
+*Essa ordem explica, por exemplo, por que funções de agregação como `SUM()` não podem ser usadas na cláusula `WHERE`, devendo ser colocadas no `HAVING`*.
+
+---
+
+### 4. Elementos Sintáticos: Tipos, Operadores e Expressões
+
+#### Tipos de Dados Suportados
+A sintaxe exige que cada coluna seja declarada com um tipo de dado específico:
+* **Numéricos**: `INTEGER`, `SMALLINT`, `BIGINT`, `DECIMAL`, `NUMERIC`, `FLOAT`, `REAL`.
+* **Texto/Caractere**: `CHAR(n)`, `VARCHAR(n)`, `CLOB`.
+* **Temporais**: `DATE`, `TIME`, `TIMESTAMP` / `DATETIME`.
+* **Lógicos**: `BOOLEAN` (`TRUE` ou `FALSE`).
+
+#### Operadores de Comparação e Lógicos
+* **Comparação**: `=`, `!=` ou `<>`, `<`, `>`, `<=`, `>=`, `BETWEEN ... AND ...`, `IN (...)`, `LIKE` (com os caracteres curinga `%` para múltiplos caracteres e `_` para um caractere individual), `IS NULL` / `IS NOT NULL`.
+* **Lógicos**: `AND`, `OR` e `NOT`. O uso de **parênteses** é fundamental para garantir a precedência correta em condições complexas.
+
+#### Lógica Condicional (`CASE`)
+A sintaxe do `CASE` permite avaliar condições lógicas diretamente dentro de instruções SQL:
+```sql
+SELECT nome,
+       CASE 
+           WHEN salario >= 10000 THEN 'Sênior'
+           WHEN salario >= 5000 THEN 'Pleno'
+           ELSE 'Júnior'
+       END AS nivel_cargo
+FROM funcionario;
+```
+
+---
+
+### 5. Convenções e Estilo de Código
+
+* **Comentários**:
+  * Comentário em linha única: `-- texto do comentário`.
+  * Comentário em bloco de múltiplas linhas: `/* texto do bloco */`.
+* **Sensibilidade de Caixa (Case Sensitivity)**: A linguagem ignora maiúsculas e minúsculas para palavras-chave e nomes de colunas na maioria dos sistemas, mas por convenção de boa prática, as palavras-chave reservadas (`SELECT`, `FROM`, `WHERE`) são escritas em **MAIÚSCULAS** para legibilidade.
+
 
