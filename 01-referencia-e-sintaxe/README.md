@@ -57,7 +57,4 @@ Embora a instrução comece com o comando `SELECT`, o banco de dados avalia e pr
 5. **`SELECT`**: Seleciona quais colunas ou expressões finais serão exibidas no resultado.
 6. **`ORDER BY`**: Ordena as linhas do resultado final.
 
-💡 *Gostaria de ver um exemplo prático criando tabelas com chaves relacionais ou prefere praticar a escrita de comandos de consulta (`SELECT`) com filtros e ordenação?*
-
-
 
